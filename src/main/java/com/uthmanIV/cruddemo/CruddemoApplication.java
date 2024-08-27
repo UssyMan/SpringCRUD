@@ -20,13 +20,13 @@ public class CruddemoApplication {
 	@Bean
 	public CommandLineRunner runner(StudentDAO studentDAO) {
 		return runner -> {
-			//createStudent(studentDAO);
+			createStudent(studentDAO);
             //getStudentById(studentDAO);
 			//System.out.println(findByLastName(studentDAO,"Sheme"));
 			//deleteStudent(studentDAO,4L);
 			//System.out.println(getAllStudents(studentDAO));
 			//updateStudentDetails(studentDAO,2L,"Ali", "Abuhuraira","aliyu@gmail.com");
-			deleteAll(studentDAO);
+			//deleteAll(studentDAO);
 
 
 		};
